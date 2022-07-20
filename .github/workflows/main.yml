@@ -65,7 +65,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-        #passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролемdsв
+        #passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-пdаролемdsв
         script: |
           sudo docker pull 4071296/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
